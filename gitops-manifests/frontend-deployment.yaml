@@ -44,7 +44,7 @@ spec:
                         - frontend-web
                 topologyKey: "kubernetes.io/hostname"
       containers:
-        - name: frontend-web
-          image: us-central1-docker.pkg.dev/gcp-devops-ecommerce/my-registry/frontend-web:latest
+       - name: frontend-web    # تأكد إن الاسم هنا هو نفس الاسم ده
+          image: us-central1-docker.pkg.dev/gcp-devops-ecommerce/my-registry/frontend-web:84814fdad2b759e1ed0a72d74a2825536dab413a
           ports:
             - containerPort: 80
