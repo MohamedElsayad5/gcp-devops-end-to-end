@@ -35,3 +35,4 @@ secrets.yaml
 
 # Misc
 *.tmp
+gcp-key.json

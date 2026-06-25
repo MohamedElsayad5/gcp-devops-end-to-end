@@ -48,7 +48,7 @@ spec:
       containers:
         - name: backend-api
           # the image for the backend API container
-          image: us-central1-docker.pkg.dev/your-gcp-project-id/my-registry/backend-api:latest
+          image: us-central1-docker.pkg.dev/gcp-devops-ecommerce/my-registry/backend-api:latest
           ports:
             - containerPort: 5000
           env:
