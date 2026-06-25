@@ -50,8 +50,9 @@ spec:
             - name: POSTGRES_PASSWORD
               value: mysecurepassword
           volumeMounts:
-            - name: postgres-storage
-              mountPath: /var/lib/postgresql/data
+        - name: postgres-storage
+          mountPath: /var/lib/postgresql/data
+          subPath: pgdata 
   # define(Persistent Volume)
   volumeClaimTemplates:
     - metadata:
