@@ -3,8 +3,6 @@ name: Backend API CI
 on:
   push:
     branches: [ "main" ]
-    paths:
-      - 'src/api-backend/**' 
 
 jobs:
   build-and-push:
@@ -34,4 +32,3 @@ jobs:
       run: |
         docker push us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/my-registry/backend-api:${{ github.sha }}
         docker push us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/my-registry/backend-api:latest
-        name: Backend API CI - Force Trigger
