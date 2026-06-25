@@ -1,17 +1,16 @@
-# Stage 1
+# Stage 1: Build
 FROM node:18-alpine AS build
 WORKDIR /app
 
-
-COPY src/web-frontend/package*.json ./
+COPY package*.json ./
 RUN npm install
 
-COPY src/web-frontend/ .
+COPY . .
 
 
 RUN npm run build
 
-# Stage 2
+# Stage 2: Serve
 FROM nginx:alpine
 COPY --from=build /app/build /usr/share/nginx/html
 EXPOSE 80
