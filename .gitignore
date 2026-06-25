@@ -1,0 +1,37 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+.terraform.lock.hcl
+
+# NodeJS
+node_modules/
+npm-debug.log*
+
+# Build
+dist/
+build/
+coverage/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Kubernetes Secrets
+secrets.yaml
+*.secret.yaml
+
+# Environment Variables
+.env
+.env.*
+
+# Misc
+*.tmp
