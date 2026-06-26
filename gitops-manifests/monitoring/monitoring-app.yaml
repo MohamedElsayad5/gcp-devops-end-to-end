@@ -20,6 +20,8 @@ spec:
             role: system 
           adminUser: admin
           adminPassword: "admin"
+          service:
+            type: LoadBalancer
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: monitoring
