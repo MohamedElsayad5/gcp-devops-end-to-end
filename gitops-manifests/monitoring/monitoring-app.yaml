@@ -18,7 +18,8 @@ spec:
         grafana:
           nodeSelector:
             role: system 
-          adminPassword: "admin" 
+          adminUser: admin
+          adminPassword: "admin"
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: monitoring
