@@ -4,6 +4,7 @@ metadata:
   name: frontend-service
   namespace: default
 spec:
+  type: NodePort  
   ports:
     - port: 80
       targetPort: 80
@@ -25,26 +26,6 @@ spec:
       labels:
         app: frontend-web
     spec:
-      affinity:
-        nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            nodeSelectorTerms:
-              - matchExpressions:
-                  - key: role
-                    operator: In
-                    values:
-                      - application
-        podAntiAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-            - weight: 100
-              podAffinityTerm:
-                labelSelector:
-                  matchExpressions:
-                    - key: app
-                      operator: In
-                      values:
-                        - frontend-web
-                topologyKey: "kubernetes.io/hostname"
       containers:
         - name: frontend-web
           image: us-central1-docker.pkg.dev/gcp-devops-ecommerce/my-registry/frontend-web:latest
