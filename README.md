@@ -26,7 +26,7 @@
 
 <div align="center">
 
-![Architecture Diagram](gcp image/Architecture.png)
+![Architecture Diagram](image/Architecture.png)
 
 </div>
 
@@ -48,7 +48,7 @@ NEGs are dynamically managed by GKE Ingress Controller. This avoids node-port SN
 ---
 <div align="center">
 
-![e-commerce web server ](gcp image/e-commerce.png)
+![e-commerce web server ](image/e-commerce.png)
 
 </div>
 ## 2. Automated Provisioning (IaC)
@@ -64,17 +64,18 @@ terraform apply -var-file="prod.tfvars"
 ```
 <div align="center">
 
-![Enabl Compute Engine API](gcp image/compute api.png)
+![Enabl Compute Engine API](image/compute api.png)
+
+</div>
+
+<div align="center">
+
+![Enabl GKE API](image/k8sapi.png)
 
 </div>
 <div align="center">
 
-![Enabl GKE API](gcp image/k8sapi.png)
-
-</div>
-<div align="center">
-
-![Enabl ARtificial Rejestry API](gcp image/artrejapi.png)
+![Enabl ARtificial Rejestry API](image/artrejapi.png)
 
 </div>
 ### Key IaC Decisions
@@ -93,7 +94,7 @@ terraform apply -var-file="prod.tfvars"
 
 <div align="center">
 
-![GITOPS ARGOCD ](gcp image/argo.png)
+![GITOPS ARGOCD ](image/argo.png)
 
 </div>
 
@@ -222,7 +223,7 @@ gcloud compute network-endpoint-groups delete k8s1-abc12def-monitoring-grafana-3
 
 <div align="center">
 
-![monitoring screen](gcp image/monitoring.png)
+![monitoring screen](image/monitoring.png)
 
 </div>
 
