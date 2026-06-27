@@ -62,9 +62,10 @@ terraform init -backend-config="bucket=YOUR_GCS_BUCKET"
 terraform plan -var-file="prod.tfvars"
 terraform apply -var-file="prod.tfvars"
 ```
+
 <div align="center">
 
-![Enabl Compute engine  API](image/computeengin.png)
+![Enabl Compute engine  API](image/computeapi.png)
 
 </div>
 
