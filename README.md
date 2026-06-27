@@ -64,7 +64,7 @@ terraform apply -var-file="prod.tfvars"
 ```
 <div align="center">
 
-![Enabl Compute Engine API](image/compute api.png)
+![Enabl Compute engine  API](image/computeengin.png)
 
 </div>
 
