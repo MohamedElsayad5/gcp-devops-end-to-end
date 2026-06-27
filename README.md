@@ -265,7 +265,9 @@ Open dashboard `Kubernetes / Compute Resources / Cluster`. Set time window to `L
 2. `gcloud`, `terraform >= 1.5`, `kubectl`, `helm` installed.
 3. `terraform apply` → `kubectl apply -f gitops/bootstrap/` → Access ArgoCD UI to sync.
 
-**Author:** [Your Name] | Principal DevOps Engineer
-**Contact:**[LinkedIn][Email]
+**Author:** [Mohamed ELsayad] | Principal DevOps Engineer
+
+**Contact:**[https://www.linkedin.com/in/mohamed-mahamoud-elsayad/]
+[moeyelsayad777@gmail.com]
 
 > This project is actively maintained. For questions on the incident runbooks, please open an issue.
