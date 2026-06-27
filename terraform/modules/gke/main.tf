@@ -3,6 +3,7 @@ resource "google_container_cluster" "primary" {
   name     = var.cluster_name
   project  = var.project_id
   location = "${var.region}-a" # us-central1-a
+  deletion_protection = false
 
   network    = var.network_id
   subnetwork = var.subnet_name
